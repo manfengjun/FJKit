@@ -14,6 +14,7 @@
 		BFC1A3CA1EFE3FAC00BBB8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC1A3C81EFE3FAC00BBB8CF /* LaunchScreen.storyboard */; };
 		BFC1A3D51EFE3FAD00BBB8CF /* FJKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3D41EFE3FAD00BBB8CF /* FJKitTests.swift */; };
 		BFC1A3E01EFE3FAD00BBB8CF /* FJKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3DF1EFE3FAD00BBB8CF /* FJKitUITests.swift */; };
+		F5DE08F6A03F4637FA21747D /* Pods_FJKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE94C6F697089537C5DC574C /* Pods_FJKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BAE45A6C149AD26D4900607 /* Pods-FJKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.debug.xcconfig"; sourceTree = "<group>"; };
+		958FD0C7B9208F7E71CB8864 /* Pods-FJKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.release.xcconfig"; sourceTree = "<group>"; };
 		BFC1A3BC1EFE3FAB00BBB8CF /* FJKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC1A3BF1EFE3FAB00BBB8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC1A3C11EFE3FAB00BBB8CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		BFC1A3DB1EFE3FAD00BBB8CF /* FJKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC1A3DF1EFE3FAD00BBB8CF /* FJKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FJKitUITests.swift; sourceTree = "<group>"; };
 		BFC1A3E11EFE3FAD00BBB8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE94C6F697089537C5DC574C /* Pods_FJKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FJKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DE08F6A03F4637FA21747D /* Pods_FJKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03116356B074238863654FD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BAE45A6C149AD26D4900607 /* Pods-FJKit.debug.xcconfig */,
+				958FD0C7B9208F7E71CB8864 /* Pods-FJKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BFC1A3B31EFE3FAA00BBB8CF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				BFC1A3D31EFE3FAD00BBB8CF /* FJKitTests */,
 				BFC1A3DE1EFE3FAD00BBB8CF /* FJKitUITests */,
 				BFC1A3BD1EFE3FAB00BBB8CF /* Products */,
+				03116356B074238863654FD4 /* Pods */,
+				D928A1FC4CF05FC10CDB07EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = FJKitUITests;
 			sourceTree = "<group>";
 		};
+		D928A1FC4CF05FC10CDB07EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE94C6F697089537C5DC574C /* Pods_FJKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFC1A3E41EFE3FAD00BBB8CF /* Build configuration list for PBXNativeTarget "FJKit" */;
 			buildPhases = (
+				7575E3034912122B1AB4DF52 /* [CP] Check Pods Manifest.lock */,
 				BFC1A3B81EFE3FAB00BBB8CF /* Sources */,
 				BFC1A3B91EFE3FAB00BBB8CF /* Frameworks */,
 				BFC1A3BA1EFE3FAB00BBB8CF /* Resources */,
+				1C7F5E08CD36E6B31386A6DD /* [CP] Embed Pods Frameworks */,
+				B881D43893C264668C994272 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C7F5E08CD36E6B31386A6DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FJKit/Pods-FJKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7575E3034912122B1AB4DF52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B881D43893C264668C994272 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FJKit/Pods-FJKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFC1A3B81EFE3FAB00BBB8CF /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		BFC1A3E51EFE3FAD00BBB8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BAE45A6C149AD26D4900607 /* Pods-FJKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FJKit/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		BFC1A3E61EFE3FAD00BBB8CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958FD0C7B9208F7E71CB8864 /* Pods-FJKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FJKit/Info.plist;
