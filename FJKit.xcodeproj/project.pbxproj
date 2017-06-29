@@ -88,9 +88,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BF386A201F037E710015CDAA /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
 		BFC1A3B31EFE3FAA00BBB8CF = {
 			isa = PBXGroup;
 			children = (
+				BF386A201F037E710015CDAA /* Sections */,
 				BFC1A3BE1EFE3FAB00BBB8CF /* FJKit */,
 				BFC1A3D31EFE3FAD00BBB8CF /* FJKitTests */,
 				BFC1A3DE1EFE3FAD00BBB8CF /* FJKitUITests */,
@@ -582,6 +590,7 @@
 				BFC1A3E61EFE3FAD00BBB8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC1A3E71EFE3FAD00BBB8CF /* Build configuration list for PBXNativeTarget "FJKitTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +599,7 @@
 				BFC1A3E91EFE3FAD00BBB8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC1A3EA1EFE3FAD00BBB8CF /* Build configuration list for PBXNativeTarget "FJKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +608,7 @@
 				BFC1A3EC1EFE3FAD00BBB8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
