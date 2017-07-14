@@ -14,9 +14,12 @@
 		BFC1A3CA1EFE3FAC00BBB8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC1A3C81EFE3FAC00BBB8CF /* LaunchScreen.storyboard */; };
 		BFC1A3D51EFE3FAD00BBB8CF /* FJKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3D41EFE3FAD00BBB8CF /* FJKitTests.swift */; };
 		BFC1A3E01EFE3FAD00BBB8CF /* FJKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3DF1EFE3FAD00BBB8CF /* FJKitUITests.swift */; };
-		BFD651EE1F184F780066219F /* FJCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651ED1F184F780066219F /* FJCodeView.swift */; };
 		BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651F01F185FC90066219F /* Color+Extension.swift */; };
-		BFD651F51F18756A0066219F /* SQLiteUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651F41F18756A0066219F /* SQLiteUtil.swift */; };
+		BFD651F51F18756A0066219F /* FJSQLiteUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651F41F18756A0066219F /* FJSQLiteUtil.swift */; };
+		BFD651FA1F18ACD30066219F /* FJCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651F91F18ACD30066219F /* FJCodeView.swift */; };
+		BFD651FD1F18AD5B0066219F /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651FC1F18AD5B0066219F /* ParentViewController.swift */; };
+		BFD651FF1F18AD670066219F /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651FE1F18AD670066219F /* CurrentViewController.swift */; };
+		BFD652011F18AEA20066219F /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD652001F18AEA20066219F /* NewViewController.swift */; };
 		F5DE08F6A03F4637FA21747D /* Pods_FJKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE94C6F697089537C5DC574C /* Pods_FJKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +56,12 @@
 		BFC1A3DB1EFE3FAD00BBB8CF /* FJKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC1A3DF1EFE3FAD00BBB8CF /* FJKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FJKitUITests.swift; sourceTree = "<group>"; };
 		BFC1A3E11EFE3FAD00BBB8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFD651ED1F184F780066219F /* FJCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJCodeView.swift; sourceTree = "<group>"; };
 		BFD651F01F185FC90066219F /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		BFD651F41F18756A0066219F /* SQLiteUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteUtil.swift; sourceTree = "<group>"; };
+		BFD651F41F18756A0066219F /* FJSQLiteUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJSQLiteUtil.swift; sourceTree = "<group>"; };
+		BFD651F91F18ACD30066219F /* FJCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJCodeView.swift; sourceTree = "<group>"; };
+		BFD651FC1F18AD5B0066219F /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		BFD651FE1F18AD670066219F /* CurrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
+		BFD652001F18AEA20066219F /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		EE94C6F697089537C5DC574C /* Pods_FJKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FJKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				BFD651EF1F185B0D0066219F /* Category */,
-				BFD651EA1F184F4B0066219F /* Class */,
+				BFD651F71F18ACD30066219F /* UI */,
 				BFD651F21F18754C0066219F /* Util */,
 				BFC1A3BE1EFE3FAB00BBB8CF /* FJKit */,
 				BFC1A3D31EFE3FAD00BBB8CF /* FJKitTests */,
@@ -150,22 +156,6 @@
 			path = FJKitUITests;
 			sourceTree = "<group>";
 		};
-		BFD651EA1F184F4B0066219F /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				BFD651EC1F184F570066219F /* VerificationCodeView */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		BFD651EC1F184F570066219F /* VerificationCodeView */ = {
-			isa = PBXGroup;
-			children = (
-				BFD651ED1F184F780066219F /* FJCodeView.swift */,
-			);
-			path = VerificationCodeView;
-			sourceTree = "<group>";
-		};
 		BFD651EF1F185B0D0066219F /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +167,7 @@
 		BFD651F21F18754C0066219F /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				BFD651FB1F18AD3A0066219F /* Clouse */,
 				BFD651F31F18754C0066219F /* SqLite */,
 			);
 			path = Util;
@@ -185,9 +176,35 @@
 		BFD651F31F18754C0066219F /* SqLite */ = {
 			isa = PBXGroup;
 			children = (
-				BFD651F41F18756A0066219F /* SQLiteUtil.swift */,
+				BFD651F41F18756A0066219F /* FJSQLiteUtil.swift */,
 			);
 			path = SqLite;
+			sourceTree = "<group>";
+		};
+		BFD651F71F18ACD30066219F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BFD651F81F18ACD30066219F /* VerificationCodeView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BFD651F81F18ACD30066219F /* VerificationCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				BFD651F91F18ACD30066219F /* FJCodeView.swift */,
+			);
+			path = VerificationCodeView;
+			sourceTree = "<group>";
+		};
+		BFD651FB1F18AD3A0066219F /* Clouse */ = {
+			isa = PBXGroup;
+			children = (
+				BFD651FC1F18AD5B0066219F /* ParentViewController.swift */,
+				BFD651FE1F18AD670066219F /* CurrentViewController.swift */,
+				BFD652001F18AEA20066219F /* NewViewController.swift */,
+			);
+			path = Clouse;
 			sourceTree = "<group>";
 		};
 		D928A1FC4CF05FC10CDB07EC /* Frameworks */ = {
@@ -384,10 +401,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC1A3C21EFE3FAB00BBB8CF /* ViewController.swift in Sources */,
-				BFD651EE1F184F780066219F /* FJCodeView.swift in Sources */,
+				BFD651FA1F18ACD30066219F /* FJCodeView.swift in Sources */,
+				BFD651FD1F18AD5B0066219F /* ParentViewController.swift in Sources */,
+				BFD652011F18AEA20066219F /* NewViewController.swift in Sources */,
 				BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */,
 				BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */,
-				BFD651F51F18756A0066219F /* SQLiteUtil.swift in Sources */,
+				BFD651FF1F18AD670066219F /* CurrentViewController.swift in Sources */,
+				BFD651F51F18756A0066219F /* FJSQLiteUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
