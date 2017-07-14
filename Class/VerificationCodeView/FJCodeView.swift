@@ -47,6 +47,7 @@ class FJCodeView: UIView {
     ///   - characterArray: characterArray description
     init(frame: CGRect, characterArray:[String]) {
         super.init(frame: frame)
+        self.characterArray = characterArray as! NSMutableArray
     }
     
     /// 绘制验证码

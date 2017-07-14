@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftForms.xcscheme</key>
+		<key>SQLite.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>57FF83FDBDE7ECCE9C77EBC6415003CE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FCB22AC7DB7FFD00047AF2E3CE638727</key>
+		<key>A42A8DCAD3CE6ECAA3E837C123F979B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4A3C41A2CF152AAA6DA3B82624C3FBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

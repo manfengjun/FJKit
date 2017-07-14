@@ -16,6 +16,7 @@
 		BFC1A3E01EFE3FAD00BBB8CF /* FJKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3DF1EFE3FAD00BBB8CF /* FJKitUITests.swift */; };
 		BFD651EE1F184F780066219F /* FJCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651ED1F184F780066219F /* FJCodeView.swift */; };
 		BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651F01F185FC90066219F /* Color+Extension.swift */; };
+		BFD651F51F18756A0066219F /* SQLiteUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651F41F18756A0066219F /* SQLiteUtil.swift */; };
 		F5DE08F6A03F4637FA21747D /* Pods_FJKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE94C6F697089537C5DC574C /* Pods_FJKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		BFC1A3E11EFE3FAD00BBB8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD651ED1F184F780066219F /* FJCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJCodeView.swift; sourceTree = "<group>"; };
 		BFD651F01F185FC90066219F /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		BFD651F41F18756A0066219F /* SQLiteUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteUtil.swift; sourceTree = "<group>"; };
 		EE94C6F697089537C5DC574C /* Pods_FJKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FJKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			children = (
 				BFD651EF1F185B0D0066219F /* Category */,
 				BFD651EA1F184F4B0066219F /* Class */,
+				BFD651F21F18754C0066219F /* Util */,
 				BFC1A3BE1EFE3FAB00BBB8CF /* FJKit */,
 				BFC1A3D31EFE3FAD00BBB8CF /* FJKitTests */,
 				BFC1A3DE1EFE3FAD00BBB8CF /* FJKitUITests */,
@@ -169,6 +172,22 @@
 				BFD651F01F185FC90066219F /* Color+Extension.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		BFD651F21F18754C0066219F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BFD651F31F18754C0066219F /* SqLite */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BFD651F31F18754C0066219F /* SqLite */ = {
+			isa = PBXGroup;
+			children = (
+				BFD651F41F18756A0066219F /* SQLiteUtil.swift */,
+			);
+			path = SqLite;
 			sourceTree = "<group>";
 		};
 		D928A1FC4CF05FC10CDB07EC /* Frameworks */ = {
@@ -368,6 +387,7 @@
 				BFD651EE1F184F780066219F /* FJCodeView.swift in Sources */,
 				BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */,
 				BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */,
+				BFD651F51F18756A0066219F /* SQLiteUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

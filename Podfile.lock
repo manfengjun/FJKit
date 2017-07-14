@@ -1,15 +1,17 @@
 PODS:
   - Alamofire (4.4.0)
-  - SwiftForms (1.7)
+  - SQLite.swift (0.11.3):
+    - SQLite.swift/standard (= 0.11.3)
+  - SQLite.swift/standard (0.11.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4.0)
-  - SwiftForms (~> 1.7)
+  - SQLite.swift (~> 0.11.3)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  SwiftForms: 3f3dbaa79fe54eb1ccd0aca8d0cd1e38eb00537e
+  SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
 
-PODFILE CHECKSUM: 4bcae179018e5d030e51f599296b51ea82b656ee
+PODFILE CHECKSUM: c900c2883b8d6c72b0c116523251044af89d6f58
 
 COCOAPODS: 1.3.0.beta.1
