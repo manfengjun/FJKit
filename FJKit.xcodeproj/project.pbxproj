@@ -20,6 +20,7 @@
 		BFD651FD1F18AD5B0066219F /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651FC1F18AD5B0066219F /* ParentViewController.swift */; };
 		BFD651FF1F18AD670066219F /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD651FE1F18AD670066219F /* CurrentViewController.swift */; };
 		BFD652011F18AEA20066219F /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD652001F18AEA20066219F /* NewViewController.swift */; };
+		BFD652081F18B74D0066219F /* FJCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD652071F18B74D0066219F /* FJCountDown.swift */; };
 		F5DE08F6A03F4637FA21747D /* Pods_FJKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE94C6F697089537C5DC574C /* Pods_FJKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		BFD651FC1F18AD5B0066219F /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		BFD651FE1F18AD670066219F /* CurrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		BFD652001F18AEA20066219F /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		BFD652071F18B74D0066219F /* FJCountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJCountDown.swift; sourceTree = "<group>"; };
 		EE94C6F697089537C5DC574C /* Pods_FJKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FJKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 		BFD651F71F18ACD30066219F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BFD652061F18B7480066219F /* CountDown */,
 				BFD651F81F18ACD30066219F /* VerificationCodeView */,
 			);
 			path = UI;
@@ -205,6 +208,14 @@
 				BFD652001F18AEA20066219F /* NewViewController.swift */,
 			);
 			path = Clouse;
+			sourceTree = "<group>";
+		};
+		BFD652061F18B7480066219F /* CountDown */ = {
+			isa = PBXGroup;
+			children = (
+				BFD652071F18B74D0066219F /* FJCountDown.swift */,
+			);
+			path = CountDown;
 			sourceTree = "<group>";
 		};
 		D928A1FC4CF05FC10CDB07EC /* Frameworks */ = {
@@ -406,6 +417,7 @@
 				BFD652011F18AEA20066219F /* NewViewController.swift in Sources */,
 				BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */,
 				BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */,
+				BFD652081F18B74D0066219F /* FJCountDown.swift in Sources */,
 				BFD651FF1F18AD670066219F /* CurrentViewController.swift in Sources */,
 				BFD651F51F18756A0066219F /* FJSQLiteUtil.swift in Sources */,
 			);
