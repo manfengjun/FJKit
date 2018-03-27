@@ -57,21 +57,21 @@ class FJCodeView: UIView {
         super.draw(rect)
         //获得要显示验证码字符串，根据长度，计算每个字符显示的大概位置
         let str = NSString(string: "S")
-        let size = str.size(attributes: [NSFontAttributeName : kFontSize])
+        let size = str.size(withAttributes: [NSAttributedStringKey.font : kFontSize])
         let width = rect.size.width / CGFloat(NSString(string: code!).length) - size.width
         let height = rect.size.height - size.height
         var point:CGPoint?
         var pX:CGFloat?
         var pY:CGFloat?
         // 绘制验证码
-        for (i,_) in (code?.characters.enumerated())! {
+        for (i,_) in (code?.enumerated())! {
             pX = CGFloat(arc4random()).truncatingRemainder(dividingBy: width) + rect.size.width / CGFloat(NSString(string: code!).length)*CGFloat(i)
             pY = CGFloat(arc4random()).truncatingRemainder(dividingBy: height)
             point = CGPoint(x: pX!, y: pY!)
             let c = NSString(string: code!).character(at: i)
             
             let codeText:NSString? = NSString(format: "%C",c)
-            codeText!.draw(at: point!, withAttributes: [NSFontAttributeName : kFontSize])
+            codeText!.draw(at: point!, withAttributes: [NSAttributedStringKey.font : kFontSize])
         }
         
         //调用drawRect：之前，系统会向栈中压入一个CGContextRef，调用UIGraphicsGetCurrentContext()会取栈顶的CGContextRef

@@ -42,7 +42,7 @@ class FJCountDown: NSObject {
         super.init()
         codeBtn = button
     }
-    func updateTime(timer: Timer) {
+    @objc func updateTime(timer: Timer) {
         remainingSeconds -= 1
     }
 }

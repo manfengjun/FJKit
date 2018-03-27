@@ -17,8 +17,8 @@ extension UIColor{
     ///   - g: g description
     ///   - b: b description
     /// - Returns: return value description
-    class func rgbColor(r:Float,g:Float,b:Float) -> UIColor {
-        return UIColor(colorLiteralRed: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
+    class func rgbColor(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
+        return UIColor(displayP3Red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
     }
     
     /// RGB颜色(透明度)
@@ -30,8 +30,8 @@ extension UIColor{
     ///   - a: a description
     /// - Returns: return value description
     
-    class func rgbColor(r:Float,g:Float,b:Float,a:Float) -> UIColor {
-        return UIColor(colorLiteralRed: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+    class func rgbColor(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) -> UIColor {
+        return UIColor(displayP3Red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
     }
     
     /// 16进制颜色
@@ -45,7 +45,7 @@ extension UIColor{
             cString = (cString as NSString).substring(from: 1)
         }
         
-        if (cString.characters.count != 6) {
+        if (cString.count != 6) {
             return UIColor.gray
         }
         
@@ -74,7 +74,7 @@ extension UIColor{
             cString = (cString as NSString).substring(from: 1)
         }
         
-        if (cString.characters.count != 6) {
+        if (cString.count != 6) {
             return UIColor.gray
         }
         
