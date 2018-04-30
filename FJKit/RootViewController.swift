@@ -9,22 +9,9 @@
 import UIKit
 
 class RootViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button = UIButton(type: .custom)
-        button.frame = CGRect(x: 100, y: 200, width: 120, height: 40)
-        button.addTarget(self, action: #selector(pushAction(_:)), for: .touchUpInside)
-        button.setTitle("跳转", for: .normal)
-        button.backgroundColor = UIColor.orange
-        view.addSubview(button)
-        
-        
-        // Do any additional setup after loading the view.
-    }
-    @objc func pushAction(_ sender:UIButton) {
-        let navAnimationVC = NavAnimationFirstViewController()
-        self.navigationController?.pushViewController(navAnimationVC, animated: true)
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

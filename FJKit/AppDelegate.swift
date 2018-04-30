@@ -18,9 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         self.window?.backgroundColor = UIColor.white
-        let rootVC = RootViewController()
+        let rootVC = WTIndexHomeViewController()
         let nav = UINavigationController(rootViewController: rootVC)
-        nav.navigationBar.barTintColor = UIColor.orange
         window?.rootViewController = nav
         // Override point for customization after application launch.
         return true

@@ -1,0 +1,93 @@
+[
+    {
+        "title": "采购销售类",
+        "list": [
+            {
+                "title": "销售订单",
+                "pic": "index_xsdd"
+            },
+            {
+                "title": "新增销售订单",
+                "pic": "mine_2"
+            },
+            {
+                "title": "销售退货单",
+                "pic": "mine_3"
+            },
+            {
+                "title": "新增退货单",
+                "pic": "mine_4"
+            },
+            {
+                "title": "采购订单",
+                "pic": "mine_5"
+            },
+            {
+                "title": "新增采购订单",
+                "pic": "mine_6"
+            },
+            {
+                "title": "采购退货单",
+                "pic": "mine_7"
+            },
+            {
+                "title": "新增采购退货单",
+                "pic": "mine_9"
+            }
+        ]
+    },
+    {
+        "title": "商品/库存类",
+        "list": [
+            {
+                "title": "商品管理",
+                "pic": "mine_6"
+            },
+            {
+                "title": "新增商品",
+                "pic": "mine_5"
+            },
+            {
+                "title": "商品库存",
+                "pic": "mine_4"
+            },
+            {
+                "title": "库存调拨",
+                "pic": "mine_3"
+            },
+            {
+                "title": "商品入库",
+                "pic": "mine_2"
+            },
+            {
+                "title": "商品出库",
+                "pic": "mine_1"
+            }
+        ]
+    },
+    {
+        "title": "其他类",
+        "list": [
+            {
+                "title": "物流公司单",
+                "pic": "mine_3"
+            },
+            {
+                "title": "供应商",
+                "pic": "mine_4"
+            },
+            {
+                "title": "CRM",
+                "pic": "mine_6"
+            },
+            {
+                "title": "营销活动",
+                "pic": "mine_1"
+            },
+            {
+                "title": "资金收支明细",
+                "pic": "mine_7"
+            }
+        ]
+    }
+]
