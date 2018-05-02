@@ -9,7 +9,6 @@
 import UIKit
 import ObjectMapper
 class WTIndexHomeViewController: BaseViewController {
-    var nav_alpha:CGFloat = 0
     var dataArray:[WTIndexHomeModel] = []
     /// 首页按钮列表
     fileprivate lazy var collectionView : UICollectionView = {
@@ -37,10 +36,12 @@ class WTIndexHomeViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isTranslucent = true
-
+        
         // 导航栏透明
-        self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4", alpha: nav_alpha)), for: UIBarPosition.any, barMetrics: .default)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+            self.navigationController?.navigationBar.subviews[0].alpha = 0
 
+        }
         
     }
     
@@ -48,7 +49,7 @@ class WTIndexHomeViewController: BaseViewController {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isTranslucent = false
         // 导航栏恢复
-        self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4", alpha: 1)), for: UIBarPosition.any, barMetrics: .default)
+//        self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4", alpha: 1)), for: UIBarPosition.any, barMetrics: .default)
         
     }
     override func viewDidLoad() {
@@ -135,11 +136,9 @@ extension WTIndexHomeViewController:SBCollectionViewDelegateFlowLayout,UIScrollV
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        var progress = scrollView.contentOffset.y/50
-        progress = progress < 0 ? 1 : progress
-        progress = progress > 1 ? 1 : progress
-        self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4", alpha: progress)), for: UIBarPosition.any, barMetrics: .default)
-        nav_alpha = progress
+        let progress = scrollView.contentOffset.y/(scrollView.contentSize.height - UIScreen.main.bounds.size.height)
+        print(progress)
+        self.navigationController?.navigationBar.subviews[0].alpha = progress
     }
 }
 

@@ -30,7 +30,7 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.tintColor = UIColor.white
         
-        self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4")), for: UIBarPosition.any, barMetrics: .default)
+//        self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4")), for: UIBarPosition.any, barMetrics: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
     }
