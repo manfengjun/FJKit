@@ -9,6 +9,8 @@
 import UIKit
 
 class WTIndexHomeTopView: UICollectionReusableView {
+    
+    /// 今天按钮
     fileprivate lazy var todayBtn: UIButton = {
         let todayBtn = UIButton(type: .custom)
         todayBtn.setTitle("今天V", for: .normal)
@@ -17,6 +19,8 @@ class WTIndexHomeTopView: UICollectionReusableView {
         todayBtn.backgroundColor = UIColor.hexStringColor(hex: "#ffffff", alpha: 0.2)
         return todayBtn
     }()
+    
+    /// 选择日期按钮
     fileprivate lazy var timeBtn: UIButton = {
         let timeBtn = UIButton(type: .custom)
         timeBtn.setTitle("2018.4.26-2018.4.26∨", for: .normal)
@@ -25,17 +29,20 @@ class WTIndexHomeTopView: UICollectionReusableView {
         timeBtn.backgroundColor = UIColor.hexStringColor(hex: "#ffffff", alpha: 0.2)
         return timeBtn
     }()
-    fileprivate lazy var view: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor.hexStringColor(hex: "#F8BE19")
-        view.layer.masksToBounds = true
-        view.layer.cornerRadius = 8
-        view.layer.cornerRadius = 5;
-        view.layer.shadowOffset =  CGSize(width: 1, height: 1)
-        view.layer.shadowOpacity = 0.3;
-        view.layer.shadowColor =  UIColor.hexStringColor(hex: "#F8BE19").cgColor
-        return view
+    
+    /// 审核状态显示
+    fileprivate lazy var reviewView: UIView = {
+        let reviewView = UIView()
+        reviewView.backgroundColor = UIColor.hexStringColor(hex: "#F8BE19")
+        reviewView.layer.masksToBounds = true
+        reviewView.layer.cornerRadius = 8
+        reviewView.layer.cornerRadius = 5;
+        reviewView.layer.shadowOffset =  CGSize(width: 1, height: 1)
+        reviewView.layer.shadowOpacity = 0.3;
+        reviewView.layer.shadowColor =  UIColor.hexStringColor(hex: "#F8BE19").cgColor
+        return reviewView
     }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup_ui()
@@ -96,8 +103,8 @@ extension WTIndexHomeTopView {
         timeBtn.layer.borderColor = UIColor.hexStringColor(hex: "#ffffff").cgColor
         timeBtn.layer.borderWidth = 1
 
-        addSubview(view)
-        view.snp.makeConstraints { (make) in
+        addSubview(reviewView)
+        reviewView.snp.makeConstraints { (make) in
             make.left.equalTo(25)
             make.right.equalTo(-25)
             make.height.equalTo(60)

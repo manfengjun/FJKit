@@ -131,11 +131,11 @@
 				81EF09522097126300E4C153 /* WTIndexHomeModel.swift */,
 				81EF094E2096FA4900E4C153 /* BaseViewController.swift */,
 				81507A562096C5C700914276 /* SBCollectionViewFlowLayout.swift */,
-				81507A4A2096AC5A00914276 /* WTIndexHomeViewController.swift */,
 				81EF094A2096EF9D00E4C153 /* WTIndexHomeTopView.swift */,
+				81507A502096AE4200914276 /* WTImageButton.swift */,
+				81507A4A2096AC5A00914276 /* WTIndexHomeViewController.swift */,
 				81507A582096C92E00914276 /* WTIndexHomeMenuHeaderView.swift */,
 				81507A4E2096AD0A00914276 /* WTIndexHomeMenuCVCell.swift */,
-				81507A502096AE4200914276 /* WTImageButton.swift */,
 			);
 			path = IndexView;
 			sourceTree = "<group>";

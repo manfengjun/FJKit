@@ -20,7 +20,7 @@ class WTIndexHomeViewController: BaseViewController {
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height), collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.bounces = false
+//        collectionView.bounces = false
         collectionView.backgroundColor = UIColor.hexStringColor(hex: "#f2f3f7")
         collectionView.register(WTIndexHomeMenuCVCell.classForCoder(), forCellWithReuseIdentifier: WTIndexHomeMenuCVCell.cellIdentifier)
         collectionView.register(WTIndexHomeMenuHeaderView.classForCoder(), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: WTIndexHomeMenuHeaderView.cellIdentifier)
@@ -36,20 +36,16 @@ class WTIndexHomeViewController: BaseViewController {
     }()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isTranslucent = true
-
         // 导航栏透明
+        self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4", alpha: nav_alpha)), for: UIBarPosition.any, barMetrics: .default)
-
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.isTranslucent = false
         // 导航栏恢复
+        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4", alpha: 1)), for: UIBarPosition.any, barMetrics: .default)
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,14 +126,26 @@ extension WTIndexHomeViewController: UICollectionViewDelegate,UICollectionViewDa
     }
 }
 extension WTIndexHomeViewController:SBCollectionViewDelegateFlowLayout,UIScrollViewDelegate{
+    
+    /// 设置分区颜色
+    ///
+    /// - Parameters:
+    ///   - collectionView:
+    ///   - collectionViewLayout:
+    ///   - section:
+    /// - Returns:
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, backgroundColorForSectionAt section: Int) -> UIColor {
         return UIColor.white
     }
+    
+    /// 导航栏动态变色
+    ///
+    /// - Parameter scrollView:
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        var progress = scrollView.contentOffset.y/50
-        progress = progress < 0 ? 1 : progress
-        progress = progress > 1 ? 1 : progress
+        let progress = scrollView.contentOffset.y/50
+//        progress = progress < 0 ? 1 : progress
+//        progress = progress > 1 ? 1 : progress
         self.navigationController?.navigationBar.setBackgroundImage(imageFromColor(color: UIColor.hexStringColor(hex: "#18ceb4", alpha: progress)), for: UIBarPosition.any, barMetrics: .default)
         nav_alpha = progress
     }
