@@ -42,7 +42,14 @@ class WTIndexHomeTopView: UICollectionReusableView {
         reviewView.layer.shadowColor =  UIColor.hexStringColor(hex: "#F8BE19").cgColor
         return reviewView
     }()
-    
+    fileprivate lazy var waitFinanceNum: UILabel = {
+        let waitFinanceNum = UILabel()
+        waitFinanceNum.text = "待财务审核"
+        waitFinanceNum.font = UIFont.systemFont(ofSize: 15)
+        waitFinanceNum.textColor = attribute.titleColor
+        waitFinanceNum.backgroundColor = attribute.titleBgColor
+        waitFinanceNum.textAlignment = attribute.textAlignment
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup_ui()
@@ -57,7 +64,7 @@ class WTIndexHomeTopView: UICollectionReusableView {
 // MARK: - 初始化UI
 extension WTIndexHomeTopView {
     
-    /// 设置渐变色
+    /// 设置背景渐变色
     func setLayer() {
         //定义渐变的颜色（从黄色渐变到橙色）
         let topColor = UIColor.hexStringColor(hex: "#18ceb4", alpha: 1)
