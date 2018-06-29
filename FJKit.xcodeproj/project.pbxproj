@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8147C57820CA7AEB00116422 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147C57620CA7AEB00116422 /* BaseWebViewController.swift */; };
+		8147C57920CA7AEB00116422 /* WTWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147C57720CA7AEB00116422 /* WTWebView.swift */; };
+		8147C57B20CA7B2700116422 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147C57A20CA7B2700116422 /* WebViewController.swift */; };
+		8147C63A20CA7B7100116422 /* agencySys in Resources */ = {isa = PBXBuildFile; fileRef = 8147C63920CA7B7100116422 /* agencySys */; };
 		BF7B2C24206A13A3006912AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2C23206A13A3006912AC /* RootViewController.swift */; };
 		BF7B2C27206A177D006912AC /* NavAnimationFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2C26206A177D006912AC /* NavAnimationFirstViewController.swift */; };
 		BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3BF1EFE3FAB00BBB8CF /* AppDelegate.swift */; };
@@ -45,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		6BAE45A6C149AD26D4900607 /* Pods-FJKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.debug.xcconfig"; sourceTree = "<group>"; };
+		8147C57620CA7AEB00116422 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
+		8147C57720CA7AEB00116422 /* WTWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTWebView.swift; sourceTree = "<group>"; };
+		8147C57A20CA7B2700116422 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8147C63920CA7B7100116422 /* agencySys */ = {isa = PBXFileReference; lastKnownFileType = folder; path = agencySys; sourceTree = "<group>"; };
 		958FD0C7B9208F7E71CB8864 /* Pods-FJKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.release.xcconfig"; sourceTree = "<group>"; };
 		BF7B2C23206A13A3006912AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BF7B2C26206A177D006912AC /* NavAnimationFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAnimationFirstViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +114,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8147C57520CA7AD900116422 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8147C63920CA7B7100116422 /* agencySys */,
+				8147C57620CA7AEB00116422 /* BaseWebViewController.swift */,
+				8147C57720CA7AEB00116422 /* WTWebView.swift */,
+				8147C57A20CA7B2700116422 /* WebViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		BF7B2C25206A174F006912AC /* NavAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +136,7 @@
 		BFC1A3B31EFE3FAA00BBB8CF = {
 			isa = PBXGroup;
 			children = (
+				8147C57520CA7AD900116422 /* WebView */,
 				BFD651EF1F185B0D0066219F /* Category */,
 				BFD651F71F18ACD30066219F /* UI */,
 				BFD651F21F18754C0066219F /* Util */,
@@ -356,6 +376,7 @@
 				BFC1A3CA1EFE3FAC00BBB8CF /* LaunchScreen.storyboard in Resources */,
 				BFC1A3C71EFE3FAC00BBB8CF /* Assets.xcassets in Resources */,
 				BFC1A3C51EFE3FAB00BBB8CF /* Main.storyboard in Resources */,
+				8147C63A20CA7B7100116422 /* agencySys in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,10 +452,13 @@
 				BFD651FD1F18AD5B0066219F /* ParentViewController.swift in Sources */,
 				BFD652011F18AEA20066219F /* NewViewController.swift in Sources */,
 				BF7B2C27206A177D006912AC /* NavAnimationFirstViewController.swift in Sources */,
+				8147C57820CA7AEB00116422 /* BaseWebViewController.swift in Sources */,
 				BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */,
 				BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */,
 				BFD652081F18B74D0066219F /* FJCountDown.swift in Sources */,
 				BFD651FF1F18AD670066219F /* CurrentViewController.swift in Sources */,
+				8147C57B20CA7B2700116422 /* WebViewController.swift in Sources */,
+				8147C57920CA7AEB00116422 /* WTWebView.swift in Sources */,
 				BFD651F51F18756A0066219F /* FJSQLiteUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
