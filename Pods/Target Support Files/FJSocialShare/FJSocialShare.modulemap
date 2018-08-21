@@ -1,0 +1,6 @@
+framework module FJSocialShare {
+  umbrella header "FJSocialShare-umbrella.h"
+
+  export *
+  module * { export * }
+}

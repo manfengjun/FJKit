@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - FJSocialShare (0.0.1)
   - ObjectMapper (3.1.0)
   - SnapKit (4.0.0)
   - SQLite.swift (0.11.4):
@@ -8,11 +9,14 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FJSocialShare
   - ObjectMapper
   - SnapKit
   - SQLite.swift
 
 SPEC REPOS:
+  https://git.coding.net/JUN3672830/FJRepo.git:
+    - FJSocialShare
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - ObjectMapper
@@ -21,10 +25,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  FJSocialShare: c73512e713c419fa5fa067b4391bcd4a45a4efe2
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
 
-PODFILE CHECKSUM: 9cfc30be0104d4d8e29f74062ff1c2b7627beafa
+PODFILE CHECKSUM: 627d492b5c9cac6514ca392b3543084be0827a8c
 
 COCOAPODS: 1.5.0
