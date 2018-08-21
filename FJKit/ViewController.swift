@@ -16,8 +16,9 @@ class ViewController: UIViewController {
         
          let codeview1 = UIView(frame: CGRect(x: 80, y: 200, width: 100, height: 30))
         codeview1.backgroundColor = UIColor.blue
-        codeview1.jj.addBadge(number: 20)
-        
+        codeview1.jj.setBadge(flexMode: .right)
+
+        codeview1.jj.addBadge(text: "300")
         view.addSubview(codeview1)
 
         view.addSubview(codeview)

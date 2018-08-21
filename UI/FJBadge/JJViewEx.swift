@@ -161,13 +161,18 @@ public extension Extension where Base: UIView {
             hiddenBadge()
             return
         }
-        addBadge(text: "\(number > 999 ? 999 : number)")
+        if number > 99 {
+            addDot()
+            return
+        }
+        addBadge(text: "\(number)")
     }
     
     /// 红点
     ///
     /// - Parameter color: 颜色
-    public func addDot(color:UIColor?) {
+    public func addDot(color:UIColor = UIColor.init(red: 1.00, green: 0.17, blue: 0.15, alpha: 1.0)) {
+        self.base.badgeLabel.backgroundColor = color
         addBadge(text: "")
         setBadge(height: 8.0)
     }
