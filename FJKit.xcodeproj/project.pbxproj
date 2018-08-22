@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF13BFEE212C5E6D007199FB /* FJFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFED212C5E6D007199FB /* FJFilterView.swift */; };
+		BF13BFEE212C5E6D007199FB /* JJFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFED212C5E6D007199FB /* JJFilterView.swift */; };
 		BF13BFF5212C62BC007199FB /* JJBadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF4212C62BC007199FB /* JJBadgeLabel.swift */; };
 		BF13BFF7212C645B007199FB /* JJEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF6212C645B007199FB /* JJEx.swift */; };
 		BF13BFF9212C6502007199FB /* JJViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF8212C6502007199FB /* JJViewEx.swift */; };
 		BF13BFFB212C658C007199FB /* JJLabelEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFFA212C658C007199FB /* JJLabelEx.swift */; };
+		BF13BFFF212D8F45007199FB /* JJTabBarItemEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFFE212D8F45007199FB /* JJTabBarItemEx.swift */; };
+		BF13C001212D928F007199FB /* JJBarButtonItemEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13C000212D928F007199FB /* JJBarButtonItemEx.swift */; };
+		BF13C003212D9874007199FB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13C002212D9874007199FB /* MainTabBarController.swift */; };
 		BF7B2C24206A13A3006912AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2C23206A13A3006912AC /* RootViewController.swift */; };
 		BF7B2C27206A177D006912AC /* NavAnimationFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2C26206A177D006912AC /* NavAnimationFirstViewController.swift */; };
 		BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3BF1EFE3FAB00BBB8CF /* AppDelegate.swift */; };
@@ -51,11 +54,14 @@
 /* Begin PBXFileReference section */
 		6BAE45A6C149AD26D4900607 /* Pods-FJKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.debug.xcconfig"; sourceTree = "<group>"; };
 		958FD0C7B9208F7E71CB8864 /* Pods-FJKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.release.xcconfig"; sourceTree = "<group>"; };
-		BF13BFED212C5E6D007199FB /* FJFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FJFilterView.swift; sourceTree = "<group>"; };
+		BF13BFED212C5E6D007199FB /* JJFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJFilterView.swift; sourceTree = "<group>"; };
 		BF13BFF4212C62BC007199FB /* JJBadgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBadgeLabel.swift; sourceTree = "<group>"; };
 		BF13BFF6212C645B007199FB /* JJEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJEx.swift; sourceTree = "<group>"; };
 		BF13BFF8212C6502007199FB /* JJViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJViewEx.swift; sourceTree = "<group>"; };
 		BF13BFFA212C658C007199FB /* JJLabelEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJLabelEx.swift; sourceTree = "<group>"; };
+		BF13BFFE212D8F45007199FB /* JJTabBarItemEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarItemEx.swift; sourceTree = "<group>"; };
+		BF13C000212D928F007199FB /* JJBarButtonItemEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBarButtonItemEx.swift; sourceTree = "<group>"; };
+		BF13C002212D9874007199FB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BF7B2C23206A13A3006912AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BF7B2C26206A177D006912AC /* NavAnimationFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAnimationFirstViewController.swift; sourceTree = "<group>"; };
 		BFC1A3BC1EFE3FAB00BBB8CF /* FJKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +132,7 @@
 		BF13BFEC212C5E43007199FB /* FJFilterView */ = {
 			isa = PBXGroup;
 			children = (
-				BF13BFED212C5E6D007199FB /* FJFilterView.swift */,
+				BF13BFED212C5E6D007199FB /* JJFilterView.swift */,
 			);
 			path = FJFilterView;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 				BF13BFF4212C62BC007199FB /* JJBadgeLabel.swift */,
 				BF13BFF6212C645B007199FB /* JJEx.swift */,
 				BF13BFF8212C6502007199FB /* JJViewEx.swift */,
+				BF13BFFE212D8F45007199FB /* JJTabBarItemEx.swift */,
+				BF13C000212D928F007199FB /* JJBarButtonItemEx.swift */,
 				BF13BFFA212C658C007199FB /* JJLabelEx.swift */,
 			);
 			path = FJBadge;
@@ -181,6 +189,7 @@
 			children = (
 				BFC1A3BF1EFE3FAB00BBB8CF /* AppDelegate.swift */,
 				BF7B2C23206A13A3006912AC /* RootViewController.swift */,
+				BF13C002212D9874007199FB /* MainTabBarController.swift */,
 				BFC1A3C11EFE3FAB00BBB8CF /* ViewController.swift */,
 				BFC1A3C31EFE3FAB00BBB8CF /* Main.storyboard */,
 				BFC1A3C61EFE3FAC00BBB8CF /* Assets.xcassets */,
@@ -466,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF13BFFF212D8F45007199FB /* JJTabBarItemEx.swift in Sources */,
 				BF7B2C24206A13A3006912AC /* RootViewController.swift in Sources */,
 				BFC1A3C21EFE3FAB00BBB8CF /* ViewController.swift in Sources */,
 				BF13BFF7212C645B007199FB /* JJEx.swift in Sources */,
@@ -473,10 +483,12 @@
 				BFD651FD1F18AD5B0066219F /* ParentViewController.swift in Sources */,
 				BFD652011F18AEA20066219F /* NewViewController.swift in Sources */,
 				BF7B2C27206A177D006912AC /* NavAnimationFirstViewController.swift in Sources */,
-				BF13BFEE212C5E6D007199FB /* FJFilterView.swift in Sources */,
+				BF13BFEE212C5E6D007199FB /* JJFilterView.swift in Sources */,
 				BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */,
+				BF13C001212D928F007199FB /* JJBarButtonItemEx.swift in Sources */,
 				BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */,
 				BF13BFF9212C6502007199FB /* JJViewEx.swift in Sources */,
+				BF13C003212D9874007199FB /* MainTabBarController.swift in Sources */,
 				BF13BFFB212C658C007199FB /* JJLabelEx.swift in Sources */,
 				BFD652081F18B74D0066219F /* FJCountDown.swift in Sources */,
 				BF13BFF5212C62BC007199FB /* JJBadgeLabel.swift in Sources */,

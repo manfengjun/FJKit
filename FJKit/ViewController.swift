@@ -35,11 +35,28 @@ class ViewController: UIViewController {
 //        //删除数据
 //        sqliteContext.delData(userId: 1) // 1 -> 用户id
 
+        self.setRightButtonInNav(imageUrl: "index_xsdd", action: #selector(ceshi))
         
-      
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    @objc func ceshi()  {
+        
+    }
+    /// 导航栏左侧按钮
+    ///
+    /// - Parameters:
+    ///   - imageUrl: imageUrl description
+    ///   - action: action description
+    func setRightButtonInNav(imageUrl: String, action: Selector) {
+        let image = UIImage(named: imageUrl)
+        let backBtn = UIButton(type: UIButtonType.custom)
+        backBtn.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
+        backBtn.addTarget(self, action: action, for: UIControlEvents.touchUpInside)
+        backBtn.setImage(image, for: UIControlState.normal)
+        let item = UIBarButtonItem(customView: backBtn)
+        item.jj.addBadge(number: 300)
+        navigationItem.leftBarButtonItem = item
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

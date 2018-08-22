@@ -8,6 +8,6 @@
 
 import UIKit
 
-class FJFilterView: UIView {
+class JJFilterView: UIView {
 
 }
