@@ -15,6 +15,8 @@
 		BF13BFFF212D8F45007199FB /* JJTabBarItemEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFFE212D8F45007199FB /* JJTabBarItemEx.swift */; };
 		BF13C001212D928F007199FB /* JJBarButtonItemEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13C000212D928F007199FB /* JJBarButtonItemEx.swift */; };
 		BF13C003212D9874007199FB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13C002212D9874007199FB /* MainTabBarController.swift */; };
+		BF13C005212EF6D8007199FB /* JJDeviceEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13C004212EF6D8007199FB /* JJDeviceEx.swift */; };
+		BF13C007212EF9D6007199FB /* JJObjectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13C006212EF9D6007199FB /* JJObjectEx.swift */; };
 		BF7B2C24206A13A3006912AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2C23206A13A3006912AC /* RootViewController.swift */; };
 		BF7B2C27206A177D006912AC /* NavAnimationFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2C26206A177D006912AC /* NavAnimationFirstViewController.swift */; };
 		BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1A3BF1EFE3FAB00BBB8CF /* AppDelegate.swift */; };
@@ -62,6 +64,8 @@
 		BF13BFFE212D8F45007199FB /* JJTabBarItemEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarItemEx.swift; sourceTree = "<group>"; };
 		BF13C000212D928F007199FB /* JJBarButtonItemEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBarButtonItemEx.swift; sourceTree = "<group>"; };
 		BF13C002212D9874007199FB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BF13C004212EF6D8007199FB /* JJDeviceEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJDeviceEx.swift; sourceTree = "<group>"; };
+		BF13C006212EF9D6007199FB /* JJObjectEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJObjectEx.swift; sourceTree = "<group>"; };
 		BF7B2C23206A13A3006912AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BF7B2C26206A177D006912AC /* NavAnimationFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAnimationFirstViewController.swift; sourceTree = "<group>"; };
 		BFC1A3BC1EFE3FAB00BBB8CF /* FJKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 				BF13BFFE212D8F45007199FB /* JJTabBarItemEx.swift */,
 				BF13C000212D928F007199FB /* JJBarButtonItemEx.swift */,
 				BF13BFFA212C658C007199FB /* JJLabelEx.swift */,
+				BF13C004212EF6D8007199FB /* JJDeviceEx.swift */,
+				BF13C006212EF9D6007199FB /* JJObjectEx.swift */,
 			);
 			path = FJBadge;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF13BFFF212D8F45007199FB /* JJTabBarItemEx.swift in Sources */,
+				BF13C007212EF9D6007199FB /* JJObjectEx.swift in Sources */,
 				BF7B2C24206A13A3006912AC /* RootViewController.swift in Sources */,
 				BFC1A3C21EFE3FAB00BBB8CF /* ViewController.swift in Sources */,
 				BF13BFF7212C645B007199FB /* JJEx.swift in Sources */,
@@ -491,6 +498,7 @@
 				BF13C003212D9874007199FB /* MainTabBarController.swift in Sources */,
 				BF13BFFB212C658C007199FB /* JJLabelEx.swift in Sources */,
 				BFD652081F18B74D0066219F /* FJCountDown.swift in Sources */,
+				BF13C005212EF6D8007199FB /* JJDeviceEx.swift in Sources */,
 				BF13BFF5212C62BC007199FB /* JJBadgeLabel.swift in Sources */,
 				BFD651FF1F18AD670066219F /* CurrentViewController.swift in Sources */,
 				BFD651F51F18756A0066219F /* FJSQLiteUtil.swift in Sources */,

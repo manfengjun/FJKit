@@ -12,16 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let codeview = FJCodeView(frame: CGRect(x: 80, y: 100, width: 100, height: 30))
         
-         let codeview1 = UIView(frame: CGRect(x: 80, y: 200, width: 100, height: 30))
-        codeview1.backgroundColor = UIColor.blue
-        codeview1.jj.setBadge(flexMode: .right)
-
-        codeview1.jj.addBadge(text: "300")
-        view.addSubview(codeview1)
-
-        view.addSubview(codeview)
+//        let codeview = FJCodeView(frame: CGRect(x: 80, y: 100, width: 100, height: 30))
+//
+//         let codeview1 = UIView(frame: CGRect(x: 80, y: 200, width: 100, height: 30))
+//        codeview1.backgroundColor = UIColor.blue
+//        codeview1.jj.setBadge(flexMode: .right)
+//
+//        codeview1.jj.addBadge(text: "300")
+//        view.addSubview(codeview1)
+//
+//        view.addSubview(codeview)
 //
 //        let sqliteContext = FJSQLiteUtil() //如果没有,默认创建数据库及表格
 //        //插入数据

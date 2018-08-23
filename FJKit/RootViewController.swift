@@ -9,10 +9,20 @@
 import UIKit
 
 class RootViewController: UIViewController {
+    fileprivate lazy var filterView:JJFilterView = {
+        let filterView = JJFilterView(50)
+        return filterView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.filterView.dataArray = [JJFilterModel(1, "测试1"),JJFilterModel(2, "测试2"),JJFilterModel(3, "测试3")]
+        self.filterView.show()
     }
+    @IBAction func btnClicked(_ sender: UIButton) {
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
