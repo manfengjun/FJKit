@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811C9C7A214219E20055604C /* JSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C9C79214219E20055604C /* JSViewController.swift */; };
+		811C9C822142583B0055604C /* JSBridge+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C9C812142583B0055604C /* JSBridge+Order.swift */; };
+		819281992141318D00D1BD0C /* JSEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819281982141318D00D1BD0C /* JSEx.swift */; };
+		8192819B2141338700D1BD0C /* JSBridge+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192819A2141338700D1BD0C /* JSBridge+Common.swift */; };
 		BF13BFEE212C5E6D007199FB /* JJFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFED212C5E6D007199FB /* JJFilterView.swift */; };
 		BF13BFF5212C62BC007199FB /* JJBadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF4212C62BC007199FB /* JJBadgeLabel.swift */; };
 		BF13BFF7212C645B007199FB /* JJEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF6212C645B007199FB /* JJEx.swift */; };
@@ -55,6 +59,10 @@
 
 /* Begin PBXFileReference section */
 		6BAE45A6C149AD26D4900607 /* Pods-FJKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.debug.xcconfig"; sourceTree = "<group>"; };
+		811C9C79214219E20055604C /* JSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSViewController.swift; sourceTree = "<group>"; };
+		811C9C812142583B0055604C /* JSBridge+Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSBridge+Order.swift"; sourceTree = "<group>"; };
+		819281982141318D00D1BD0C /* JSEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSEx.swift; sourceTree = "<group>"; };
+		8192819A2141338700D1BD0C /* JSBridge+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSBridge+Common.swift"; sourceTree = "<group>"; };
 		958FD0C7B9208F7E71CB8864 /* Pods-FJKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.release.xcconfig"; sourceTree = "<group>"; };
 		BF13BFED212C5E6D007199FB /* JJFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJFilterView.swift; sourceTree = "<group>"; };
 		BF13BFF4212C62BC007199FB /* JJBadgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBadgeLabel.swift; sourceTree = "<group>"; };
@@ -129,6 +137,10 @@
 		8147C57520CA7AD900116422 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				819281982141318D00D1BD0C /* JSEx.swift */,
+				811C9C79214219E20055604C /* JSViewController.swift */,
+				8192819A2141338700D1BD0C /* JSBridge+Common.swift */,
+				811C9C812142583B0055604C /* JSBridge+Order.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -486,6 +498,7 @@
 				BF7B2C24206A13A3006912AC /* RootViewController.swift in Sources */,
 				BFC1A3C21EFE3FAB00BBB8CF /* ViewController.swift in Sources */,
 				BF13BFF7212C645B007199FB /* JJEx.swift in Sources */,
+				819281992141318D00D1BD0C /* JSEx.swift in Sources */,
 				BFD651FA1F18ACD30066219F /* FJCodeView.swift in Sources */,
 				BFD651FD1F18AD5B0066219F /* ParentViewController.swift in Sources */,
 				BFD652011F18AEA20066219F /* NewViewController.swift in Sources */,
@@ -494,12 +507,15 @@
 				BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */,
 				BF13C001212D928F007199FB /* JJBarButtonItemEx.swift in Sources */,
 				BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */,
+				8192819B2141338700D1BD0C /* JSBridge+Common.swift in Sources */,
 				BF13BFF9212C6502007199FB /* JJViewEx.swift in Sources */,
+				811C9C822142583B0055604C /* JSBridge+Order.swift in Sources */,
 				BF13C003212D9874007199FB /* MainTabBarController.swift in Sources */,
 				BF13BFFB212C658C007199FB /* JJLabelEx.swift in Sources */,
 				BFD652081F18B74D0066219F /* FJCountDown.swift in Sources */,
 				BF13C005212EF6D8007199FB /* JJDeviceEx.swift in Sources */,
 				BF13BFF5212C62BC007199FB /* JJBadgeLabel.swift in Sources */,
+				811C9C7A214219E20055604C /* JSViewController.swift in Sources */,
 				BFD651FF1F18AD670066219F /* CurrentViewController.swift in Sources */,
 				BFD651F51F18756A0066219F /* FJSQLiteUtil.swift in Sources */,
 			);
