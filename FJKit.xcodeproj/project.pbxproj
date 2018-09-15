@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		811C9C7A214219E20055604C /* JSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C9C79214219E20055604C /* JSViewController.swift */; };
 		811C9C822142583B0055604C /* JSBridge+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C9C812142583B0055604C /* JSBridge+Order.swift */; };
+		815D868D214CE4EF00400948 /* JJFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815D868C214CE4EF00400948 /* JJFilterView.swift */; };
 		819281992141318D00D1BD0C /* JSEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819281982141318D00D1BD0C /* JSEx.swift */; };
 		8192819B2141338700D1BD0C /* JSBridge+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192819A2141338700D1BD0C /* JSBridge+Common.swift */; };
-		BF13BFEE212C5E6D007199FB /* JJFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFED212C5E6D007199FB /* JJFilterView.swift */; };
+		81D1E434214CFA6E005E1F86 /* JJApplicationEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D1E433214CFA6E005E1F86 /* JJApplicationEx.swift */; };
 		BF13BFF5212C62BC007199FB /* JJBadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF4212C62BC007199FB /* JJBadgeLabel.swift */; };
 		BF13BFF7212C645B007199FB /* JJEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF6212C645B007199FB /* JJEx.swift */; };
 		BF13BFF9212C6502007199FB /* JJViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13BFF8212C6502007199FB /* JJViewEx.swift */; };
@@ -61,10 +62,11 @@
 		6BAE45A6C149AD26D4900607 /* Pods-FJKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.debug.xcconfig"; sourceTree = "<group>"; };
 		811C9C79214219E20055604C /* JSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSViewController.swift; sourceTree = "<group>"; };
 		811C9C812142583B0055604C /* JSBridge+Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSBridge+Order.swift"; sourceTree = "<group>"; };
+		815D868C214CE4EF00400948 /* JJFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJFilterView.swift; sourceTree = "<group>"; };
 		819281982141318D00D1BD0C /* JSEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSEx.swift; sourceTree = "<group>"; };
 		8192819A2141338700D1BD0C /* JSBridge+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSBridge+Common.swift"; sourceTree = "<group>"; };
+		81D1E433214CFA6E005E1F86 /* JJApplicationEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJApplicationEx.swift; sourceTree = "<group>"; };
 		958FD0C7B9208F7E71CB8864 /* Pods-FJKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJKit/Pods-FJKit.release.xcconfig"; sourceTree = "<group>"; };
-		BF13BFED212C5E6D007199FB /* JJFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJFilterView.swift; sourceTree = "<group>"; };
 		BF13BFF4212C62BC007199FB /* JJBadgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBadgeLabel.swift; sourceTree = "<group>"; };
 		BF13BFF6212C645B007199FB /* JJEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJEx.swift; sourceTree = "<group>"; };
 		BF13BFF8212C6502007199FB /* JJViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJViewEx.swift; sourceTree = "<group>"; };
@@ -148,7 +150,7 @@
 		BF13BFEC212C5E43007199FB /* FJFilterView */ = {
 			isa = PBXGroup;
 			children = (
-				BF13BFED212C5E6D007199FB /* JJFilterView.swift */,
+				815D868C214CE4EF00400948 /* JJFilterView.swift */,
 			);
 			path = FJFilterView;
 			sourceTree = "<group>";
@@ -164,6 +166,7 @@
 				BF13BFFA212C658C007199FB /* JJLabelEx.swift */,
 				BF13C004212EF6D8007199FB /* JJDeviceEx.swift */,
 				BF13C006212EF9D6007199FB /* JJObjectEx.swift */,
+				81D1E433214CFA6E005E1F86 /* JJApplicationEx.swift */,
 			);
 			path = FJBadge;
 			sourceTree = "<group>";
@@ -503,11 +506,12 @@
 				BFD651FD1F18AD5B0066219F /* ParentViewController.swift in Sources */,
 				BFD652011F18AEA20066219F /* NewViewController.swift in Sources */,
 				BF7B2C27206A177D006912AC /* NavAnimationFirstViewController.swift in Sources */,
-				BF13BFEE212C5E6D007199FB /* JJFilterView.swift in Sources */,
+				815D868D214CE4EF00400948 /* JJFilterView.swift in Sources */,
 				BFC1A3C01EFE3FAB00BBB8CF /* AppDelegate.swift in Sources */,
 				BF13C001212D928F007199FB /* JJBarButtonItemEx.swift in Sources */,
 				BFD651F11F185FC90066219F /* Color+Extension.swift in Sources */,
 				8192819B2141338700D1BD0C /* JSBridge+Common.swift in Sources */,
+				81D1E434214CFA6E005E1F86 /* JJApplicationEx.swift in Sources */,
 				BF13BFF9212C6502007199FB /* JJViewEx.swift in Sources */,
 				811C9C822142583B0055604C /* JSBridge+Order.swift in Sources */,
 				BF13C003212D9874007199FB /* MainTabBarController.swift in Sources */,

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         self.window?.backgroundColor = UIColor.white
-        let rootVC = JSViewController()
+        let rootVC = RootViewController()
         let nav = UINavigationController(rootViewController: rootVC)
         window?.rootViewController = nav
         // Override point for customization after application launch.
